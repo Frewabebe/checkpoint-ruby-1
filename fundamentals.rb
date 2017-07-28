@@ -3,7 +3,9 @@
 # When called the method should print to the terminal:
 # "Would you take this rose, `person`, in exchange for giving an old beggar woman shelter from the bitter cold?"
 # Type your solution directly below this line:
-
+def offer_rose (person)
+ print "Would you take this rose, #{person}, in exchange for giving an old beggar woman shelter from the bitter cold?"
+end
 
 
 
@@ -25,7 +27,9 @@ town = {
 # - Remove "Belle" from `residents`
 # - Add "Belle" to the `guests` array
 # Type your solution directly below this line:
+town[:residents].delete_at(1) # to Remove
 
+town[:castle][:guests] = "Belle" #add him
 
 
 
@@ -43,3 +47,6 @@ friends = ["Chip Potts", "Cogsworth", "Lumière", "Mrs. Potts"]
 # "Belle is friends with Lumière"
 # "Belle is friends with Mrs. Potts"
 # Type your solution directly below this line:
+for t in friends do
+  puts "Belle is friends with #{t}"
+end
